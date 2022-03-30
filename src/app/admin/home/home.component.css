@@ -1,19 +1,6 @@
-/* .cards .card .avatar {
-  background-color: aquamarine;
-  width: ;
+.main-content-home .cards {
+  padding-top: 5px;
 }
-
-.cards {
-  margin: 0 auto;
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.card {
-display: block;
-} */
 #divChart {
   display: block;
   width: 400px;

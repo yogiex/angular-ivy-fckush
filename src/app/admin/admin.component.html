@@ -41,51 +41,54 @@
 <!-- navbar -->
 
 <!-- off canvas -->
-<div class="sidemain">
-  <div class="wrapper">
-    <div class="sidebar">
-      <!-- profile image -->
+<!-- admin-component -->
+<div class="container-admin">
+  <div class="sidemain">
+    <div class="wrapper">
+      <div class="sidebar">
+        <!-- profile image -->
 
-      <div class="profile">
-        <img
-          src="https://cdn-2.tstatic.net/style/foto/bank/images/manjiro-sano-aka-mikey-dari-anime-tokyo-revengers.jpg"
-          alt=""
-        />
-        <h3>Mikey</h3>
-        <p>Petarung</p>
+        <div class="profile">
+          <img
+            src="https://cdn-2.tstatic.net/style/foto/bank/images/manjiro-sano-aka-mikey-dari-anime-tokyo-revengers.jpg"
+            alt=""
+          />
+          <h3>Mikey</h3>
+          <p>Petarung</p>
+        </div>
+
+        <!-- menu item -->
+
+        <ul>
+          <li>
+            <a [routerLink]="'home'" style="text-decoration: none">
+              <span class="icon"><i class="bi bi-house"></i></span>
+              <span class="item">Home</span></a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none" [routerLink]="'user'">
+              <span class="icon"><i class="bi bi-window-dock"></i></span>
+              <span class="item">User</span></a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none" href="#">
+              <span class="icon"><i class="bi bi-people-fill"></i></span>
+              <span class="item">User</span></a
+            >
+          </li>
+          <li>
+            <a style="text-decoration: none" href="#">
+              <span class="icon"><i class="bi bi-window-dock"></i></span>
+              <span class="item">Dashboard</span></a
+            >
+          </li>
+        </ul>
       </div>
-
-      <!-- menu item -->
-
-      <ul>
-        <li>
-          <a [routerLink]="'home'" style="text-decoration: none">
-            <span class="icon"><i class="bi bi-house"></i></span>
-            <span class="item">Home</span></a
-          >
-        </li>
-        <li>
-          <a style="text-decoration: none" [routerLink]="'user'">
-            <span class="icon"><i class="bi bi-window-dock"></i></span>
-            <span class="item">User</span></a
-          >
-        </li>
-        <li>
-          <a style="text-decoration: none" href="#">
-            <span class="icon"><i class="bi bi-people-fill"></i></span>
-            <span class="item">User</span></a
-          >
-        </li>
-        <li>
-          <a style="text-decoration: none" href="#">
-            <span class="icon"><i class="bi bi-window-dock"></i></span>
-            <span class="item">Dashboard</span></a
-          >
-        </li>
-      </ul>
     </div>
+    <!-- off canvas -->
   </div>
-  <!-- off canvas -->
 </div>
 
 <router-outlet></router-outlet>
