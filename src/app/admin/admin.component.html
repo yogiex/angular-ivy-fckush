@@ -1,0 +1,91 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" [routerLink]="'/'">Angular Dashboard</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isMenuCollapsed = !isMenuCollapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      [ngbCollapse]="isMenuCollapsed"
+      class="collapse navbar-collapse"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav ms-auto">
+        <!-- start dropdown -->
+        <li ngbDropdown display="dynamic" class="nav-item">
+          <button
+            class="btn btn-outline-primary nav-link"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            <i class="bi bi-person-circle"></i>
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Logout</button>
+          </div>
+        </li>
+        <!-- end dropdown -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar -->
+
+<!-- off canvas -->
+<div class="sidemain">
+  <div class="wrapper">
+    <div class="sidebar">
+      <!-- profile image -->
+
+      <div class="profile">
+        <img
+          src="https://cdn-2.tstatic.net/style/foto/bank/images/manjiro-sano-aka-mikey-dari-anime-tokyo-revengers.jpg"
+          alt=""
+        />
+        <h3>Mikey</h3>
+        <p>Petarung</p>
+      </div>
+
+      <!-- menu item -->
+
+      <ul>
+        <li>
+          <a [routerLink]="'home'" style="text-decoration: none">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="item">Home</span></a
+          >
+        </li>
+        <li>
+          <a style="text-decoration: none" [routerLink]="'user'">
+            <span class="icon"><i class="bi bi-window-dock"></i></span>
+            <span class="item">User</span></a
+          >
+        </li>
+        <li>
+          <a style="text-decoration: none" href="#">
+            <span class="icon"><i class="bi bi-people-fill"></i></span>
+            <span class="item">User</span></a
+          >
+        </li>
+        <li>
+          <a style="text-decoration: none" href="#">
+            <span class="icon"><i class="bi bi-window-dock"></i></span>
+            <span class="item">Dashboard</span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- off canvas -->
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+  
+}
+.container-login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #2466e2 !important;
+}
+
+.login-form {
+  width: 380px;
+  height: 480px;
+  padding: 20px;
+  
+  background-color: #2466e2 !important;
+}

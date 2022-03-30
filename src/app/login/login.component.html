@@ -1,0 +1,43 @@
+<div class="container-login">
+  <div class="card border-0 login-form">
+    <div class="card-body">
+      <h1 class="card-title text-center">Login</h1>
+    </div>
+    <div class="cart-text">
+      <form [formGroup]="credentials" (ngSubmit)="login()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            formControlName="username"
+          />
+          <div
+            class="bg-danger"
+            *ngIf="(username.dirty || username.touched) && username.errors"
+          >Username is required</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+          />
+          <div
+            class="bg-danger"
+            *ngIf="(password.dirty || password.touched) && password.errors"
+          >Password is required</div>
+        </div>
+
+        <button type="submit" class="btn btn-light">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <h1>tesssss</h1> -->
