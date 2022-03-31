@@ -38,27 +38,34 @@
     </div>
   </div>
 </nav>
-
-<!-- sidebar -->
-<nav
-  class="navbar navbar-expand d-flex flex-column align-item-start bg-danger"
-  id="sidebar"
->
-  <a class="navbar-brand text-light mt-5" routerLink="'/admin/home'">
-    <div class="display-5 font-weight-bold">Sidebar</div>
-  </a>
-  <ul class="navbar-nav d-flex flex-column mt-5 w-100">
-    <li class="nav-item w-100">
-    <a href="" class="nav-link text-light pl-4">Home</a>
-    </li>
-    <li class="nav-item w-100">
-      <a href="" class="nav-link text-light pl-4">Home</a>
-    </li>
-    <li class="nav-item w-100">
-      <a href="" class="nav-link text-light pl-4">Home</a>
-    </li>
-    <li class="nav-item w-100">
-      <a href="" class="nav-link text-light pl-4">Home</a>
-    </li>
-  </ul>
-</nav>
+<div class="row">
+  <div class="col">
+    <nav
+      class="navbar navbar-expand d-flex flex-column align-item-start bg-danger"
+      id="sidebar"
+    >
+      <a class="navbar-brand text-light mt-5" routerLink="'/admin/home'">
+        <div class="display-5 font-weight-bold">Sidebar</div>
+      </a>
+      <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">Home</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">Home</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">Home</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">Home</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="col">
+    <section class="p-4 my-container">
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+</div>
