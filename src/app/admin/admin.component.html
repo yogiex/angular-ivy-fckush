@@ -6,63 +6,67 @@
     crossorigin="anonymous"
   />
 </head>
-<nav class="navbar navbar-expand-sm navbar-light bg-danger">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="'admin'">Angular Dashboard</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
+
+<div class="container-admin-dashboard">
+  <nav class="navbar navbar-expand-sm navbar-light bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="'admin'">Angular Dashboard</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container-admin">
-  <nav
-    class="navbar navbar-expand d-flex flex-column align-item-start bg-danger"
-    id="sidebar"
-  >
-    <a class="navbar-brand text-light mt-5" routerLink="'/admin/home'">
-      <div class="display-5 font-weight-bold">Sidebar</div>
-    </a>
-    <ul class="navbar-nav d-flex flex-column mt-5 w-100">
-      <li class="nav-item w-100">
-        <a routerLink="'home'" class="nav-link text-light pl-4">Home</a>
-      </li>
-      <li class="nav-item w-100">
-        <a href="" class="nav-link text-light pl-4">Home</a>
-      </li>
-      <li class="nav-item w-100">
-        <a href="" class="nav-link text-light pl-4">Home</a>
-      </li>
-      <li class="nav-item w-100">
-        <a href="" class="nav-link text-light pl-4">Home</a>
-      </li>
-    </ul>
   </nav>
 
-  <div class="container__main">
-    <router-outlet></router-outlet>
+  <div class="container-admin">
+    <nav
+      class="navbar navbar-expand d-flex flex-column align-item-start bg-danger"
+      id="sidebar"
+    >
+      <a class="navbar-brand text-light mt-5" routerLink="'/admin/home'">
+        <div class="display-5 font-weight-bold">Sidebar</div>
+      </a>
+      <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+        <li class="nav-item w-100">
+          <a routerLink="'home'" class="nav-link text-light pl-4">Home</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">User</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">Home</a>
+        </li>
+        <li class="nav-item w-100">
+          <a href="" class="nav-link text-light pl-4">Home</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container__main right">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
