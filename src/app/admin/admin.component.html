@@ -8,7 +8,7 @@
 </head>
 <nav class="navbar navbar-expand-sm navbar-light bg-danger">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="'/admin/home'">Angular Dashboard</a>
+    <a class="navbar-brand" routerLink="'admin'">Angular Dashboard</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -38,34 +38,31 @@
     </div>
   </div>
 </nav>
-<div class="row">
-  <div class="col">
-    <nav
-      class="navbar navbar-expand d-flex flex-column align-item-start bg-danger"
-      id="sidebar"
-    >
-      <a class="navbar-brand text-light mt-5" routerLink="'/admin/home'">
-        <div class="display-5 font-weight-bold">Sidebar</div>
-      </a>
-      <ul class="navbar-nav d-flex flex-column mt-5 w-100">
-        <li class="nav-item w-100">
-          <a href="" class="nav-link text-light pl-4">Home</a>
-        </li>
-        <li class="nav-item w-100">
-          <a href="" class="nav-link text-light pl-4">Home</a>
-        </li>
-        <li class="nav-item w-100">
-          <a href="" class="nav-link text-light pl-4">Home</a>
-        </li>
-        <li class="nav-item w-100">
-          <a href="" class="nav-link text-light pl-4">Home</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="col">
-    <section class="p-4 my-container">
-      <router-outlet></router-outlet>
-    </section>
+<div class="container-admin">
+  <nav
+    class="navbar navbar-expand d-flex flex-column align-item-start bg-danger"
+    id="sidebar"
+  >
+    <a class="navbar-brand text-light mt-5" routerLink="'/admin/home'">
+      <div class="display-5 font-weight-bold">Sidebar</div>
+    </a>
+    <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+      <li class="nav-item w-100">
+        <a routerLink="'home'" class="nav-link text-light pl-4">Home</a>
+      </li>
+      <li class="nav-item w-100">
+        <a href="" class="nav-link text-light pl-4">Home</a>
+      </li>
+      <li class="nav-item w-100">
+        <a href="" class="nav-link text-light pl-4">Home</a>
+      </li>
+      <li class="nav-item w-100">
+        <a href="" class="nav-link text-light pl-4">Home</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container__main">
+    <router-outlet></router-outlet>
   </div>
 </div>
