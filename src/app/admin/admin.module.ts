@@ -6,6 +6,7 @@ import { AdminComponent } from './admin.component';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap/dropdown/dropdown.module';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
     AdminRoutingModule,
     NgbCollapseModule,
     NgbDropdownModule,
+    HttpClientModule
   ],
   declarations: [AdminComponent, HomeComponent],
 })
